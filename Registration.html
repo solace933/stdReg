@@ -1,0 +1,116 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <script src="jquery.min.js"></script>
+</head>
+<body>
+<!-- <div id="overlayer"></div>
+<div class="preloader">
+   <div class="loader">
+      <span class="loader-inner"></span>
+   </div>
+   <p> Loading...</p>
+</div> -->
+
+
+  <div id="header">
+	<div class="logo-icon">
+	 <img src="C:\Users\HP\Desktop\GREEN FORESIGHT.jpeg" alt="logo">
+	</div>
+   
+	<div  class="menu-link">
+		<ul>
+		   <li><a href="#"> Home </a> </li>
+		   <li><a href="#"> About </a></li>
+		   <li><a href="#"> Contact </a></li>
+		 </ul>
+	</div>
+
+     
+   </div>
+
+
+
+   <div id="main">
+
+      <form>
+	  <label>First Name</label><br>
+	  <input type="text" id="first_name">
+	  <br>
+	  <br>
+	  
+	  <label>Last Name</label><br>
+	  <input type="test" id="last_name">
+	  <br>
+	  <br>
+	  <label>Email</label><br>
+	  <input type="email" id="email">
+	  <br>
+	  <br>
+	  <label>Phone Number</label><br>
+	  <input type="Number" id="phone_number">
+	  <br>
+	  <br>
+	  <label>Username</label><br>
+	  <input type="test" id="username">
+	  <br>
+	  <br>
+	  <label>Password</label><br>
+	  <input type="password" value="FakePSW" id="myInput"  >
+       
+	  <div>
+		<input type="checkbox" onclick="myFunction()" class="visible">
+		<label>Show Password<label> 
+	   </div>
+	  <br>
+	  <br>
+	  <small id="error_msg"> <marquee behavior="alternate" direction="right"> </marquee></small>
+	  <button id="registerBtn" type="button"> Register </button>
+
+      </form>
+
+
+	  <div id="welcome"> </div>
+  </div>
+
+
+ <!-- jQuery -->
+ <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
+
+<script src="test.js"></script>
+
+<script>
+$(document).ready(function(){
+	let phoneNumber = document.getElementById('phone_number').value;
+	$('#registerBtn').hide();
+
+	$('#myInput').keydown(function(){
+		$('#registerBtn').show();
+		$('#registerBtn').css('background-color', 'red');
+	});
+	$("*")	
+	// All elements
+// $("div.example")	All div elements with the class of "example"
+// $("p:first")	The first p element
+// $("ul li:first-child")	The first li element inside every ul element
+// $("[href]")	All elements that have an href attribute
+// $("a[target='_blank']")	All elements that have the target attribute set to "_blank"
+// $("a[target!='_blank']")	All elements that DON'T have the target attribute set to "_blank"
+// $(":button")	All elements that have the type attribute set to "button"
+// $("tr:even")	All even tr elements (0, 2, 4...)
+// $("tr:odd")	All odd tr elements (1, 3, 5...)
+
+	$('#phone_number').keypress(function(){
+		alert('Phone number input changed');
+	});
+
+
+
+
+})
+</script>
+
+</body>
+</html>
